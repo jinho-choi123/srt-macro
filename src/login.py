@@ -17,4 +17,5 @@ def login(driver: webdriver, member_number, password):
 
     driver.find_element(By.XPATH, '/html/body/div/div[4]/div/div[2]/form/\
         fieldset/div[1]/div[1]/div[2]/div/div[2]/input').click()
-    driver.implicitly_wait(5)
+    driver.implicitly_wait(15)
+    return driver

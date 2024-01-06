@@ -7,7 +7,7 @@ from selenium.webdriver.support.select import Select
 ## search train list for given condition
 def searchTrain(driver: webdriver, departure, arrival, date, time, max_find):
     driver.get('https://etk.srail.kr/hpg/hra/01/selectScheduleList.do')
-    driver.implicitly_wait(5)
+    driver.implicitly_wait(10)
 
     dep_stn = driver.find_element(By.ID, 'dptRsStnCdNm')
     dep_stn.clear()
